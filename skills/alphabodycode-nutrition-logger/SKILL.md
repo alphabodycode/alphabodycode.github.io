@@ -1,8 +1,41 @@
 ---
 name: alphabodycode-nutrition-logger
 description: Record food, supplements, workouts and wearable-estimated energy expenditure in a user-authorized nutrition workbook using natural language. Use when the user wants to log meals, look up new food nutrition, assemble a one-off recipe, create a versioned recurring recipe, or review daily energy and nutrient intake. Preserve history, label estimates, verify workbook capabilities and never invent nutrition facts.
+license: CC-BY-NC-4.0
+---
 ---
 
+## Copyright & License
+
+**Copyright © 2026 AlphaBodyCode. All Rights Reserved.**
+
+This Skill is an original project developed by AlphaBodyCode.
+
+**License: CC BY-NC 4.0**
+
+You are welcome to:
+- Use this Skill for personal purposes.
+- Modify and customize it for your own needs.
+- Share original or modified versions for non-commercial purposes.
+
+When sharing or adapting this Skill, you must:
+- Credit AlphaBodyCode as the original author.
+- Link to the original project.
+- Indicate whether modifications have been made.
+- Retain the applicable copyright and license notices.
+
+Commercial use, resale, paid redistribution, or incorporation into commercial products and services requires prior written permission from AlphaBodyCode.
+
+Full License:
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Original Project:
+https://github.com/alphabodycode/alphabodycode.github.io
+
+Project Website:
+https://alphabodycode.github.io/
+
+---
 # AlphaBodyCode Nutrition Logger — Public Beta v0.1.0
 
 ## Scope and prerequisites
