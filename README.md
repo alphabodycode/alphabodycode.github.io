@@ -42,3 +42,62 @@ AlphaBodyCode Nutrition Logger 是一份面向主动健康管理者的开放式 
 ## 版权与授权
 
 Copyright © AlphaBodyCode. 此初始仓库暂未附加开源许可证，公开可读不代表获得复制、改编或商业再分发许可。未来如决定开源，可另行添加明确的许可证。
+---
+
+## License & Usage
+
+AlphaBodyCode is an independent project created and maintained by AlphaBodyCode.
+
+The project adopts a dual-license structure to distinguish software implementation from documentation and educational materials.
+
+### 1. Software & Workbook Implementation
+
+The website source code, software implementation, spreadsheet formulas, workbook logic, and related technical components are licensed under the **PolyForm Noncommercial License 1.0.0**.
+
+You may:
+- Use the project for personal purposes.
+- Study and modify the source code.
+- Share original or modified versions for noncommercial purposes.
+
+You may not:
+- Sell this project or its modified versions.
+- Redistribute it as part of a paid product or commercial service without permission.
+- Use it commercially without obtaining a separate written license from AlphaBodyCode.
+
+Full license: https://polyformproject.org/licenses/noncommercial/1.0.0
+
+### 2. Skills & Documentation
+
+The original Skill instructions, README documentation, tutorials, and educational materials are licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
+
+You may share and adapt these materials for noncommercial purposes, provided that you:
+- Give appropriate credit to AlphaBodyCode.
+- Include a link to the original project and license.
+- Indicate whether changes have been made.
+- Do not imply endorsement by the original author.
+
+Commercial use requires separate written permission.
+
+Full license: https://creativecommons.org/licenses/by-nc/4.0/
+
+### 3. Attribution
+
+Original Project: AlphaBodyCode
+
+Website: https://alphabodycode.github.io/
+
+GitHub: https://github.com/alphabodycode/alphabodycode.github.io
+
+Copyright © 2026 AlphaBodyCode. All rights reserved except as expressly permitted by the applicable licenses.
+
+### 4. Commercial Licensing
+
+For commercial licensing, enterprise deployment, paid distribution, or partnership opportunities, please contact the project owner for separate authorization.
+
+### 5. Disclaimer
+
+This project is an independent personal nutrition and energy-balance tracking tool. It is provided for informational and educational purposes only.
+
+It is not a medical device and does not provide medical diagnosis or treatment recommendations.
+
+---
