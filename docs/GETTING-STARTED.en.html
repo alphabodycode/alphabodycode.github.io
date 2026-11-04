@@ -1,0 +1,191 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Getting started — AlphaBodyCode</title><meta name="theme-color" content="#d52b1e"><style>
+ :root{--red:#d52b1e;--ink:#171717;--muted:#686868;--line:#deded9;--soft:#f4f3ef}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:#fff;font:16px/1.85 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;border-top:7px solid var(--red)}header{padding:22px 0;border-bottom:1px solid var(--line)}header div,main{width:min(920px,calc(100% - 40px));margin:auto}header a{color:var(--ink);font-weight:800;text-decoration:none;letter-spacing:-.04em}header span{color:var(--red)}main{padding:40px 0 80px}h1{font-size:clamp(36px,6vw,56px);letter-spacing:-.05em;line-height:1.15;margin:20px 0 28px}h2{font-size:26px;line-height:1.4;margin:54px 0 20px;border-top:1px solid var(--line);padding-top:28px}a{color:var(--red);text-underline-offset:4px}p,li{max-width:80ch}li{margin:10px 0}blockquote{margin:24px 0;padding:16px 22px;background:var(--soft);border-left:3px solid var(--red)}blockquote p{margin:0}table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:24px 0;font-size:14px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:13px 16px;vertical-align:top;min-width:110px}th{background:var(--soft)}code{background:var(--soft);padding:2px 4px;word-break:break-word}.downloads{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.downloads a{padding:11px 16px;border:1px solid var(--line);text-decoration:none;font-size:13px}footer{border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font-size:13px}button{background:#fff;border:1px solid var(--line);padding:8px 12px;cursor:pointer;color:var(--red)}.copy{margin-top:12px} @media(max-width:600px){main{padding-top:24px}h2{font-size:23px}body{font-size:15px}th,td{padding:10px;min-width:130px}}
+ </style></head><body><header><div><a href="../index.html">ALPHA<span>BODY</span>CODE.</a></div></header><main><h1>Getting started</h1>
+<p>AlphaBodyCode Nutrition Logger · Public Beta v0.1.0 · Updated November 4, 2026</p>
+<p><a href="../index.html#get-started">Home</a> · <a href="GETTING-STARTED.zh-CN.html">简体中文</a> · <a href="../templates/download.html">Download blank Excel template</a></p>
+<p>Start with one entry. Add foods and recipes as you need them. No coding required.</p>
+<h2>1. Download and prepare</h2>
+<ol>
+<li>Download the blank template above and save your own copy.</li>
+<li>Save or copy the <a href="../skills/alphabodycode-nutrition-logger/SKILL.md">English workflow rules</a>.</li>
+<li>Choose an AI tool. Direct Excel editing requires spreadsheet or file-editing tools; the rules alone do not grant file access.</li>
+</ol>
+<p>This public starter follows the existing workbook structure, without personal measurements, intake, workouts, device expenditure or private recipes. It includes one clearly labelled generic boiled-egg example for your first test. It is not a complete nutrition database.</p>
+<h2>2. Choose a route</h2>
+<table>
+<thead>
+<tr>
+<th>Environment</th>
+<th>Start here</th>
+<th>Project verification</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ChatGPT + Excel</td>
+<td>Install the official ChatGPT for Excel add-in; load the Skill if supported, or provide its text as context</td>
+<td>Official capabilities checked; this template has not been tested in that client</td>
+</tr>
+<tr>
+<td>Doubao Work PC</td>
+<td>Check file-editing and custom-skill access; authorize a dedicated folder and test a copy</td>
+<td>Official product describes file and spreadsheet tasks; project adaptation untested</td>
+</tr>
+<tr>
+<td>DeepSeek Harness</td>
+<td>Configure file-editing tools through its plugin system; inspect first</td>
+<td>Official preview; project adaptation untested</td>
+</tr>
+<tr>
+<td>Ordinary DeepSeek, Doubao or other chat</td>
+<td>Supply the rules and required fields; request rows to paste into Excel</td>
+<td>Local write access is not assumed</td>
+</tr>
+</tbody></table>
+<p><strong>ChatGPT + Excel:</strong> In Excel, use Home → Add-ins to install the official ChatGPT add-in, then sign in. Skill menus and permissions depend on your account, workspace and client. If there is no import option, use manual instructions. Verify the publisher of the add-in.</p>
+<p><strong>Manual instructions:</strong> Paste the full rules or attach the file in the AI conversation. Supply them again in each new conversation. Ask the AI to distinguish “written and verified” from “draft for import.” If it returns an edited file, download and verify it before keeping it as your latest copy.</p>
+<p>Platform references checked for this update; permissions and menus may change:</p>
+<ul>
+<li><a href="https://help.openai.com/en/articles/20001063-chatgpt-for-excel-and-google-sheets">OpenAI: ChatGPT for Excel and Google Sheets</a></li>
+<li><a href="https://help.openai.com/en/articles/20001066-skills-in-chatgpt">OpenAI: Skills</a></li>
+<li><a href="https://www.feishu.cn/content/article/7677519271848610746">Feishu: Doubao Work introduction, August 24, 2026</a></li>
+<li><a href="https://www.deepseek.com/zh/harness/">DeepSeek Harness official preview</a></li>
+</ul>
+<h2>3. Inspect before writing</h2>
+<p>Open your copy, provide the rules, and send:</p>
+<blockquote>
+<p>Read this workbook under the AlphaBodyCode rules. List sheets, fields, units, formulas, validation lists and capacity. Explain how intake reaches the dashboard. Do not modify anything yet. State whether you can save the file directly and which features remain unverified.</p>
+</blockquote>
+<p>If the AI cannot read the file, do not ask it to guess. Use manual entry instead.</p>
+<p>The workbook uses Chinese field names:</p>
+<table>
+<thead>
+<tr>
+<th>Worksheet</th>
+<th>Purpose</th>
+<th>Editable fields</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>开始使用</td>
+<td>Start here</td>
+<td>Instructions</td>
+</tr>
+<tr>
+<td>营养看板</td>
+<td>Nutrition dashboard</td>
+<td>B4: selected date</td>
+</tr>
+<tr>
+<td>每日摄入</td>
+<td>Daily intake</td>
+<td>A:D: date, time, exact food name, quantity</td>
+</tr>
+<tr>
+<td>食物补剂库</td>
+<td>Food and supplement library</td>
+<td>Unique name, category, unit, reference quantity, nutrients, provenance</td>
+</tr>
+<tr>
+<td>我的固定配方</td>
+<td>Versioned recipes</td>
+<td>A:C: unique recipe ID, version, servings</td>
+</tr>
+<tr>
+<td>配方原料</td>
+<td>Recipe ingredients</td>
+<td>A:D: recipe ID, version, ingredient, amount</td>
+</tr>
+<tr>
+<td>运动日志</td>
+<td>Workouts</td>
+<td>A:F: date, type, minutes, effort, workout kcal, note</td>
+</tr>
+<tr>
+<td>每日能量收支</td>
+<td>Daily energy balance</td>
+<td>A: date, B: full-day expenditure, K: intake complete</td>
+</tr>
+<tr>
+<td>能量趋势</td>
+<td>Energy trends</td>
+<td>Reads dashboard date automatically</td>
+</tr>
+<tr>
+<td>参考与限制</td>
+<td>Sources and limitations</td>
+<td>Reference notes</td>
+</tr>
+</tbody></table>
+<h2>4. Make your first entry</h2>
+<p>Use a test copy. Replace the date with your actual date:</p>
+<blockquote>
+<p>This is a test. Append one row in 每日摄入, columns A:D: November 4, 2026; 08:00; 水煮鸡蛋（全蛋）; quantity 2. Use the food-library unit 个 (eggs). Preserve formulas in E:Y. Report the cells actually written, units, calories and protein.</p>
+</blockquote>
+<p>Without file-editing tools, enter:</p>
+<table>
+<thead>
+<tr>
+<th>A date</th>
+<th>B time</th>
+<th>C exact food name</th>
+<th>D quantity</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2026-11-04</td>
+<td>08:00</td>
+<td>水煮鸡蛋（全蛋）</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<p>Set 营养看板!B4 to that same date. The example should produce 156 kcal, 12.6 g protein, 1.12 g carbohydrate and 10.6 g fat. These are generic estimates, not measurements of your eggs. Unspecified micronutrients stay blank.</p>
+<p>Check for duplicates and intact formulas and lists. Begin real logging in a fresh blank copy so test entries do not become personal history.</p>
+<h2>5. Record full-day expenditure</h2>
+<p>Each workout gets a separate row in 运动日志. Keep one row per date in 每日能量收支:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Enter</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>Actual date</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Device-estimated <strong>full-day</strong> expenditure, kcal</td>
+</tr>
+<tr>
+<td>K</td>
+<td>是 (yes) only when all food for the day has been logged; otherwise leave blank or select 否 (no)</td>
+</tr>
+</tbody></table>
+<p>A day enters the energy trend only when food data are valid, the date is unique, expenditure is present and K is 是. Energy balance = intake − full-day expenditure. Workout calories are not subtracted again. Do not mark a breakfast-only log as a complete day.</p>
+<p>For a temporary arithmetic check, enter 2100 kcal and 是. With only the two test eggs, the difference should be −1944 kcal. This is a calculation test, not a real daily deficit. Remove the temporary test inputs afterwards.</p>
+<h2>6. Add foods and recipes</h2>
+<p>Before adding a food, verify brand, units, raw/cooked state, reference quantity, source and estimated/confirmed status. Leave unknown nutrients blank; do not fill them with zero. Food weight is not protein weight.</p>
+<blockquote>
+<p>Check duplicates before adding this food. Show the source, serving quantity, units and nutrition values. Label anything unverified and wait for my approval before writing.</p>
+</blockquote>
+<p>For a recipe, enter its unique ID, version and servings in 我的固定配方. Add ingredients with the same ID and version in 配方原料. Verify totals, then publish the <strong>per-serving nutrient snapshot</strong> as a new food-library entry. Log the finished recipe once; do not also log its ingredients.</p>
+<blockquote>
+<p>Save this as Matcha Drink V1. Check ingredient data, total amounts and per-serving values. For changes, create V2; preserve V1 and its historical records.</p>
+</blockquote>
+<p>The template&#39;s lookup formulas read current food-library values. Preserve history by adding versioned names instead of changing nutrient values in entries already used. Automatic history freezing, recipe publication and food creation are not buttons in this starter; the AI workflow or a person must perform and verify those steps.</p>
+<h2>7. Verify each save</h2>
+<ul>
+<li>Check row counts, dates, food names, quantities and units.</li>
+<li>Confirm formulas in E:Y, validation lists and the dashboard still work.</li>
+<li>Resolve 未匹配或重名 (missing or duplicate food), 数量无效 (invalid quantity), or 营养数据缺失 (missing nutrition).</li>
+<li>Avoid counting both a recipe and its ingredients or subtracting workout calories twice.</li>
+<li>If the AI only returns text, it must label it “draft for import.”</li>
+</ul>
+<p>Initial capacity: 100 intake rows, 200 foods, 30 ingredient rows, 10 recipes, 100 workouts and 62 energy dates. Beyond these limits, extend tables, formulas, validations and summary references together; typing another row alone is insufficient.</p>
+<p>Tests in the generation environment cover food conversion, the next intake row, unknown foods, recipe totals, complete-day eligibility and no double subtraction of workouts. Native Microsoft Excel, Doubao Work and Harness client testing remains outstanding. If results differ, stop using that copy, retain your backup and report the affected cells.</p>
+<h2>8. Privacy, licensing and feedback</h2>
+<p>Keep real logs private; do not upload them to a public repository. Nutrition and wearable expenditure contain estimation error. This tool is for personal records and trends, not diagnosis or treatment.</p>
+<p>Copyright © 2026 AlphaBodyCode. Guides and Skill documents: <a href="../LICENSE-DOCS.md">CC BY-NC 4.0</a>. Workbook formulas and website implementation: <a href="../LICENSE">PolyForm Noncommercial 1.0.0</a>. Preserve attribution and source notices when sharing noncommercially; contact the maintainer for commercial permission.</p>
+<p><a href="https://github.com/alphabodycode/alphabodycode.github.io">GitHub project and feedback</a> · <a href="GETTING-STARTED.zh-CN.html">简体中文</a></p>
+<footer><a href="GETTING-STARTED.en.md" download>Download this guide (Markdown)</a> · © 2026 AlphaBodyCode</footer></main><script>document.querySelectorAll('blockquote').forEach(q=>{const b=document.createElement('button');b.className='copy';b.textContent="Copy prompt";b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(q.querySelector('p').innerText);b.textContent="Copied";}catch{b.textContent="Select the prompt to copy";}});q.append(b);});</script></body></html>
