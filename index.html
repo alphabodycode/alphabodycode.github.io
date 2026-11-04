@@ -77,7 +77,7 @@
     .footlinks{display:flex;gap:18px;flex-wrap:wrap}
     @media(max-width:760px){
       .wrap{width:min(100% - 32px,var(--max))}
-      .nav{height:64px}.navlinks{gap:14px;font-size:11px}.lang{display:none}
+      .nav{height:64px}.navlinks{gap:12px;font-size:11px;flex-wrap:wrap;justify-content:flex-end}.brand{font-size:14px;flex-shrink:0}.lang{display:none}
       .hero{padding:58px 0 52px;grid-template-columns:1fr;gap:34px}
       h1{font-size:clamp(48px,15vw,72px)}
       .lead{font-size:16px}
@@ -100,7 +100,7 @@
     <div class="wrap nav">
       <a class="brand" href="#top">ALPHA<span>BODY</span>CODE<span>.</span></a>
       <nav class="navlinks" aria-label="主导航">
-        <a href="#features">功能</a><a href="#tool">项目</a><a href="#about">关于</a>
+        <a href="#get-started">GET STARTED</a><a href="#features">功能</a><a href="#tool">项目</a><a href="#about">关于</a>
       </nav>
       <div class="lang">INDEPENDENT PROJECT · 2026</div>
     </div>
@@ -114,12 +114,8 @@
         <p class="lead">用自然语言记录饮食，用长期数据理解营养与能量收支。</p>
         <p class="sublead">让食物、营养、训练与可穿戴设备估算消耗，成为可观察、可核对、可持续积累的日常记录。</p>
         <div class="actions">
-        <a class="btn primary" href="https://github.com/alphabodycode/alphabodycode.github.io/blob/main/skills/alphabodycode-nutrition-logger/SKILL.md"
-           target="_blank"
-           rel="noopener">
-          查看公开 Skill ↗
-        </a>
-          <a class="btn secondary" href="https://alphabodycode.github.io/README.md">阅读项目说明</a>
+          <a class="btn primary" href="#get-started">开始使用 / GET STARTED</a>
+          <a class="btn secondary" href="templates/download.html">下载空白 Excel</a>
         </div>
       </div>
       <div class="hero-card">
@@ -134,6 +130,21 @@
           <div class="flowbox"><b>每日记录</b><small>DAILY LOG</small></div>
         </div>
         <div class="hero-note">示意数据 · 非个人真实记录</div>
+      </div>
+    </section>
+
+    <section class="section" id="get-started">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">GET STARTED · v0.1.0</div><h2>从第一条记录开始。</h2></div>
+          <p class="section-intro">下载自己的空白工作簿，选择熟悉的 AI，先完成一次小测试。中文与 English 指南使用同一份模板。</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature"><div class="num">01 / DOWNLOAD</div><h3>准备工作簿</h3><p>无个人记录，仅保留一条通用食物示例。下载后另存自己的副本。</p><div class="actions"><a class="btn primary" href="templates/download.html">下载空白 Excel ↓</a></div></article>
+          <article class="feature"><div class="num">02 / 简体中文</div><h3>跟着指南做一次</h3><p>选择工具、加载中文规则、记录第一餐，再核对结果。</p><div class="actions"><a class="btn secondary" href="docs/GETTING-STARTED.zh-CN.html" lang="zh-CN">中文上手指南 →</a></div></article>
+          <article class="feature"><div class="num">03 / ENGLISH</div><h3>Make your first entry</h3><p lang="en">Setup, workbook field translations and a step-by-step test.</p><div class="actions"><a class="btn secondary" href="docs/GETTING-STARTED.en.html" lang="en">English guide →</a></div></article>
+        </div>
+        <p class="sublead">ChatGPT + Excel、豆包工作和 DeepSeek Harness 的直接写入取决于账号与工具能力；本项目的客户端适配仍待实测。普通聊天用户可按指南生成表格并手动录入。WHOOP 全天消耗需自行提供。</p>
       </div>
     </section>
 
@@ -157,9 +168,9 @@
           <div>
             <div class="kicker">MY FIRST TOOL · PUBLIC BETA</div>
             <h2>AlphaBodyCode<br>Nutrition Logger</h2>
-            <p>一套以 Excel 为数据底座、以 AI 自然语言交互为记录入口的个人营养与能量收支工作流。公开的是 Skill 与使用方法，不包含任何个人健康数据。</p>
+            <p>一套以 Excel 为数据底座、以 AI 自然语言交互为记录入口的个人营养与能量收支工作流。提供中英文使用指南、Skill 规则与公开空白模板，不包含个人健康记录。</p>
           </div>
-          <a class="btn" href="https://alphabodycode.github.io/skills/alphabodycode-nutrition-logger/SKILL.md">阅读 Skill 文件 ↗</a>
+          <a class="btn" href="#get-started">开始使用 →</a>
         </div>
       </div>
     </section>
