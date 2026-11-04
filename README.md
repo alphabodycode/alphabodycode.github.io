@@ -12,6 +12,14 @@ AlphaBodyCode Nutrition Logger 是一份面向主动健康管理者的开放式 
 - 使用 WHOOP、Garmin、Apple Watch 等设备，并愿意手动补充每日总消耗的人
 - 希望减少每日食物和自制饮品记录负担的人
 
+## 开始使用 / Get started
+
+- [中文上手指南](docs/GETTING-STARTED.zh-CN.md) · [English guide](docs/GETTING-STARTED.en.md)
+- [下载公开空白 Excel 模板](templates/download.html)
+- [中文规则](skills/alphabodycode-nutrition-logger/SKILL.ch.md) · [English rules](skills/alphabodycode-nutrition-logger/SKILL.md)
+
+模板仅含一条通用食物示例，没有个人记录。请先在副本中完成指南里的首次测试。工作表字段为中文，英文指南提供字段对照。平台官方能力与本项目兼容性不是同一件事：各客户端的端到端测试仍待完成。
+
 ## 文件
 
 - [`skills/alphabodycode-nutrition-logger/SKILL.md`](skills/alphabodycode-nutrition-logger/SKILL.md) — 可移植的 Skill 工作流程规则
@@ -41,7 +49,7 @@ AlphaBodyCode Nutrition Logger 是一份面向主动健康管理者的开放式 
 
 ## 版权与授权
 
-Copyright © AlphaBodyCode. 此初始仓库暂未附加开源许可证，公开可读不代表获得复制、改编或商业再分发许可。未来如决定开源，可另行添加明确的许可证。
+Copyright © 2026 AlphaBodyCode。软件与工作簿公式采用 PolyForm Noncommercial 1.0.0；Skill 与说明文档采用 CC BY-NC 4.0。具体范围及正式条款见下文和许可证文件。
 ---
 
 ## License & Usage
