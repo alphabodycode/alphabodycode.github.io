@@ -2,7 +2,7 @@
 
 AlphaBodyCode Nutrition Logger · Public Beta v0.1.0 · Updated November 4, 2026
 
-[Home](../index.html#get-started) · [简体中文](GETTING-STARTED.zh-CN.html) · [Download blank Excel template](../templates/AlphaBodyCode-Nutrition-Blank-v0.1.0.xlsx)
+[Home](../index.html#get-started) · [简体中文](GETTING-STARTED.zh-CN.html) · [Download blank Excel template](../templates/download.html)
 
 Start with one entry. Add foods and recipes as you need them. No coding required.
 
