@@ -1,6 +1,6 @@
 # Getting started
 
-AlphaBodyCode Nutrition Logger · Public Beta v0.1.0 · Updated November 4, 2026
+AlphaBodyCode Nutrition Logger · Public Beta v0.2.0 · Updated November 4, 2026
 
 [Home](../index.html#get-started) · [简体中文](GETTING-STARTED.zh-CN.html) · [Download blank Excel template](../templates/download.html)
 
@@ -47,7 +47,11 @@ The workbook uses Chinese field names:
 | Worksheet | Purpose | Editable fields |
 | --- | --- | --- |
 | 开始使用 | Start here | Instructions |
-| 营养看板 | Nutrition dashboard | B4: selected date |
+| 营养看板 | Nutrition dashboard | B3: selected date |
+| 个人参数 | Personal profile | Actual red input cells; separate fictional examples |
+| 配方快照 | Published recipes | Values-only copies; preserve old version IDs |
+| 每日归档 | Archived days | 18 values-only nutrient rows per date |
+| 营养参考规则 | Adult reference rules | Fixed sources and version |
 | 每日摄入 | Daily intake | A:D: date, time, exact food name, quantity |
 | 食物补剂库 | Food and supplement library | Unique name, category, unit, reference quantity, nutrients, provenance |
 | 我的固定配方 | Versioned recipes | A:C: unique recipe ID, version, servings |
@@ -61,15 +65,15 @@ The workbook uses Chinese field names:
 
 Use a test copy. Replace the date with your actual date:
 
-> This is a test. Append one row in 每日摄入, columns A:D: November 4, 2026; 08:00; 水煮鸡蛋（全蛋）; quantity 2. Use the food-library unit 个 (eggs). Preserve formulas in E:Y. Report the cells actually written, units, calories and protein.
+> This is a test. Append one row in 每日摄入, columns A:D: November 4, 2026; 08:00; 示例_水煮鸡蛋（全蛋）; quantity 2. Use the food-library unit 个 (eggs). Preserve formulas in E:AD. Report the cells actually written, units, calories and protein.
 
 Without file-editing tools, enter:
 
 | A date | B time | C exact food name | D quantity |
 | --- | --- | --- | --- |
-| 2026-11-04 | 08:00 | 水煮鸡蛋（全蛋） | 2 |
+| 2026-11-04 | 08:00 | 示例_水煮鸡蛋（全蛋） | 2 |
 
-Set 营养看板!B4 to that same date. The example should produce 156 kcal, 12.6 g protein, 1.12 g carbohydrate and 10.6 g fat. These are generic estimates, not measurements of your eggs. Unspecified micronutrients stay blank.
+First enter that date in 每日能量收支!A4, leaving expenditure and completion blank; then select it in 营养看板!B3. The example should produce 156 kcal, 12.6 g protein, 1.12 g carbohydrate and 10.6 g fat. These are generic estimates, not measurements of your eggs. Unknown source nutrients stay blank; intake cells show 未知 (unknown), and the dashboard reports known subtotals with missing-data status.
 
 Check for duplicates and intact formulas and lists. Begin real logging in a fresh blank copy so test entries do not become personal history.
 
@@ -93,23 +97,27 @@ Before adding a food, verify brand, units, raw/cooked state, reference quantity,
 
 > Check duplicates before adding this food. Show the source, serving quantity, units and nutrition values. Label anything unverified and wait for my approval before writing.
 
-For a recipe, enter its unique ID, version and servings in 我的固定配方. Add ingredients with the same ID and version in 配方原料. Verify totals, then publish the **per-serving nutrient snapshot** as a new food-library entry. Log the finished recipe once; do not also log its ingredients.
+For a recipe, enter ID, version and batch servings in 我的固定配方; add its ingredients in 配方原料. Verify totals, then copy that recipe row **A:AB as values into the same columns in 配方快照; also copy AD:AW as values into AD:AW**. Do not copy the AC selection list. Nutrients are known subtotals for the whole batch; C stores batch servings. AD:AW preserves missing-data status. Unknown values must not be invented as zero.
 
-> Save this as Matcha Drink V1. Check ingredient data, total amounts and per-serving values. For changes, create V2; preserve V1 and its historical records.
+In 每日摄入, select the published recipe ID directly in C and enter consumed servings in D. Do not republish it as a food or also log its ingredients. The generic 示例_双鸡蛋_v1 recipe gives 156 kcal and 12.6g protein per serving. Create a new version for ingredient or serving changes; preserve the previous published ID.
 
-The template's lookup formulas read current food-library values. Preserve history by adding versioned names instead of changing nutrient values in entries already used. Automatic history freezing, recipe publication and food creation are not buttons in this starter; the AI workflow or a person must perform and verify those steps.
+**Personal references:** Enter actual age, height, weight, physiological sex, life stage and smoking status in 个人参数. Red fictional examples do not feed calculations. Adult micronutrient rules use NIH/NASEM references; unsupported age/stage combinations have no automatic target. Training coefficients are retained personal presets, requiring explicit adoption and a confirmed daily training type. With no workout log, confirm the day type in 每日能量收支!L; missing logs do not imply a rest day.
+
+**Preserve history:** After checking a day, copy **营养看板!J10:AC27, 18 rows by 20 columns, as values only** into 每日归档!A:T. Start at A4; for later days add 18 rows within the DailyArchive Excel table and extend its U validation formulas. Each date needs exactly one row for each of the 18 nutrients. Archived totals, missing-data status, personal parameters, targets and rule version remain static when current food/profile data change.
+
+Pasting formulas does not freeze history. U validates fields and cannot replace the values-only paste operation. Unarchived dates continue to read current food data. AI connection, publication and archiving require your AI tool or manual action; they are not automatic buttons.
 
 ## 7. Verify each save
 
 - Check row counts, dates, food names, quantities and units.
-- Confirm formulas in E:Y, validation lists and the dashboard still work.
+- Confirm formulas in E:AD, validation lists and the dashboard still work.
 - Resolve 未匹配或重名 (missing or duplicate food), 数量无效 (invalid quantity), or 营养数据缺失 (missing nutrition).
 - Avoid counting both a recipe and its ingredients or subtracting workout calories twice.
 - If the AI only returns text, it must label it “draft for import.”
 
-Initial capacity: 100 intake rows, 200 foods, 30 ingredient rows, 10 recipes, 100 workouts and 62 energy dates. Beyond these limits, extend tables, formulas, validations and summary references together; typing another row alone is insufficient.
+Initial capacity: 999 intake rows, 199 foods, 100 ingredient rows, 200 recipe versions, 199 workouts and 431 energy dates. The archive is an expandable Excel table: add 18 rows per day and extend validation formulas. Beyond other limits, extend tables, formulas, lists and summary references together.
 
-Tests in the generation environment cover food conversion, the next intake row, unknown foods, recipe totals, complete-day eligibility and no double subtraction of workouts. Native Microsoft Excel, Doubao Work and Harness client testing remains outstanding. If results differ, stop using that copy, retain your backup and report the affected cells.
+Generation-environment checks cover direct recipe servings, demographic rules, missing data, complete-day eligibility, historical snapshots and trend dates beyond the old row 104 limit. Native Microsoft Excel, Doubao Work and Harness client testing remains outstanding. If results differ, stop using that copy, retain your backup and report the affected cells.
 
 ## 8. Privacy, licensing and feedback
 
