@@ -2,7 +2,7 @@
 
 AlphaBodyCode Nutrition Logger · Public Beta v0.1.0 · 更新于2026年11月4日
 
-[返回主页](../index.html#get-started) · [English](GETTING-STARTED.en.html) · [下载空白 Excel 模板](../templates/AlphaBodyCode-Nutrition-Blank-v0.1.0.xlsx)
+[返回主页](../index.html#get-started) · [English](GETTING-STARTED.en.html) · [下载空白 Excel 模板](../templates/download.html)
 
 先完成一条记录，再慢慢增加食物和配方。你不需要懂代码。
 
