@@ -1,7 +1,7 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>新手上手指南 — AlphaBodyCode</title><meta name="theme-color" content="#d52b1e"><style>
  :root{--red:#d52b1e;--ink:#171717;--muted:#686868;--line:#deded9;--soft:#f4f3ef}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:#fff;font:16px/1.85 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;border-top:7px solid var(--red)}header{padding:22px 0;border-bottom:1px solid var(--line)}header div,main{width:min(920px,calc(100% - 40px));margin:auto}header a{color:var(--ink);font-weight:800;text-decoration:none;letter-spacing:-.04em}header span{color:var(--red)}main{padding:40px 0 80px}h1{font-size:clamp(36px,6vw,56px);letter-spacing:-.05em;line-height:1.15;margin:20px 0 28px}h2{font-size:26px;line-height:1.4;margin:54px 0 20px;border-top:1px solid var(--line);padding-top:28px}a{color:var(--red);text-underline-offset:4px}p,li{max-width:80ch}li{margin:10px 0}blockquote{margin:24px 0;padding:16px 22px;background:var(--soft);border-left:3px solid var(--red)}blockquote p{margin:0}table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:24px 0;font-size:14px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:13px 16px;vertical-align:top;min-width:110px}th{background:var(--soft)}code{background:var(--soft);padding:2px 4px;word-break:break-word}.downloads{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.downloads a{padding:11px 16px;border:1px solid var(--line);text-decoration:none;font-size:13px}footer{border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font-size:13px}button{background:#fff;border:1px solid var(--line);padding:8px 12px;cursor:pointer;color:var(--red)}.copy{margin-top:12px} @media(max-width:600px){main{padding-top:24px}h2{font-size:23px}body{font-size:15px}th,td{padding:10px;min-width:130px}}
  </style></head><body><header><div><a href="../index.html">ALPHA<span>BODY</span>CODE.</a></div></header><main><h1>新手上手指南</h1>
-<p>AlphaBodyCode Nutrition Logger · Public Beta v0.1.0 · 更新于2026年11月4日</p>
+<p>AlphaBodyCode Nutrition Logger · Public Beta v0.2.0 · 更新于2026年11月4日</p>
 <p><a href="../index.html#get-started">返回主页</a> · <a href="GETTING-STARTED.en.html">English</a> · <a href="../templates/download.html">下载空白 Excel 模板</a></p>
 <p>先完成一条记录，再慢慢增加食物和配方。你不需要懂代码。</p>
 <h2>1. 下载与准备</h2>
@@ -10,37 +10,9 @@
 <li>打开<a href="../skills/alphabodycode-nutrition-logger/SKILL.ch.md">中文工作规则</a>，保存文件或复制全文。</li>
 <li>选择一个 AI 工具。能否自动修改 Excel，取决于它是否有表格编辑工具；规则文件本身不提供写入权限。</li>
 </ol>
-<p>公开模板根据现有工作簿结构制作，不含个人身体参数、饮食、运动、设备消耗或私人配方。仅保留一条标为“通用估算示例”的水煮鸡蛋数据，便于完成首次测试。不要把它当成完整营养数据库。</p>
+<p>公开模板根据现有工作簿结构制作，不含个人身体参数、饮食、运动、设备消耗或私人配方。保留明确标注的通用水煮鸡蛋与双鸡蛋配方示例，便于完成首次测试。不要把它当成完整营养数据库。</p>
 <h2>2. 选择使用路径</h2>
-<table>
-<thead>
-<tr>
-<th>你的环境</th>
-<th>如何开始</th>
-<th>本项目验证状态</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ChatGPT + Excel</td>
-<td>按官方说明安装 ChatGPT for Excel；在账号支持时加载 Skill，否则把规则作为任务上下文提供</td>
-<td>已核查官方能力说明；本模板尚未在该客户端实测</td>
-</tr>
-<tr>
-<td>豆包工作 PC</td>
-<td>在客户端确认文件编辑和自定义技能入口，只授权专用文件夹；先测试副本</td>
-<td>官方介绍具备文件与表格任务能力；本项目适配待实测</td>
-</tr>
-<tr>
-<td>DeepSeek Harness</td>
-<td>按其插件机制配置文件编辑工具，先检查结构</td>
-<td>官方预览版；本项目适配待实测</td>
-</tr>
-<tr>
-<td>DeepSeek、豆包等普通聊天</td>
-<td>提供规则和必要字段，让 AI 生成待录入表格，再手动粘贴到 Excel</td>
-<td>不默认具备本地写入能力</td>
-</tr>
-</tbody></table>
+<table><thead><tr><th>你的环境</th><th>如何开始</th><th>本项目验证状态</th></tr></thead><tbody><tr><td>ChatGPT + Excel</td><td>按官方说明安装 ChatGPT for Excel；在账号支持时加载 Skill，否则把规则作为任务上下文提供</td><td>已核查官方能力说明；本模板尚未在该客户端实测</td></tr><tr><td>豆包工作 PC</td><td>在客户端确认文件编辑和自定义技能入口，只授权专用文件夹；先测试副本</td><td>官方介绍具备文件与表格任务能力；本项目适配待实测</td></tr><tr><td>DeepSeek Harness</td><td>按其插件机制配置文件编辑工具，先检查结构</td><td>官方预览版；本项目适配待实测</td></tr><tr><td>DeepSeek、豆包等普通聊天</td><td>提供规则和必要字段，让 AI 生成待录入表格，再手动粘贴到 Excel</td><td>不默认具备本地写入能力</td></tr></tbody></table>
 <p><strong>ChatGPT + Excel：</strong> 在 Excel 的“开始 / Home → 加载项 / Add-ins”中安装官方 ChatGPT 加载项并登录。Skill 的导入与调用入口取决于当前账号、工作区和客户端；看不到入口时，直接使用“手动规则模式”。不要安装名称相近但来源不明的加载项。</p>
 <p><strong>手动规则模式：</strong> 把中文规则全文粘贴到 AI 对话，或作为附件提供。每次新开对话重新提供规则。让 AI 明确区分“已写入并核对”和“仅生成待导入内容”。如果工具会输出修改后的文件，下载后核对，再保留自己的最新版。</p>
 <p>平台能力资料在本次更新时核查，菜单和权限仍可能变化：</p>
@@ -52,81 +24,41 @@
 </ul>
 <h2>3. 先让 AI 认识文件</h2>
 <p>打开自己的工作簿副本，提供规则，发送：</p>
-<blockquote>
-<p>请按 AlphaBodyCode 规则，先读取这个工作簿。列出工作表、字段、单位、公式、下拉选项和记录容量，解释每日摄入怎样汇总到看板。现在不要修改。请明确你能否直接保存文件，以及哪些功能还没有验证。</p>
-</blockquote>
+<blockquote><p>请按 AlphaBodyCode 规则，先读取这个工作簿。列出工作表、字段、单位、公式、下拉选项和记录容量，解释每日摄入怎样汇总到看板。现在不要修改。请明确你能否直接保存文件，以及哪些功能还没有验证。</p></blockquote>
 <p>如果它没有读到文件，不要让它猜。改用下文的手动录入。</p>
 <p>模板字段仍使用中文；英文用户可查看英文指南中的对照。</p>
 <h2>4. 完成第一条记录</h2>
 <p>先在测试副本中，发送以下指令，把日期改成你的实际日期：</p>
-<blockquote>
-<p>这是一次测试。请在“每日摄入”A:D新增一行：2026年11月4日，08:00，水煮鸡蛋（全蛋），数量2。按食物库的“个”计算，不覆盖E:Y的公式。完成后告诉我实际写入的单元格、单位、热量和蛋白质。</p>
-</blockquote>
+<blockquote><p>这是一次测试。请在“每日摄入”A:D新增一行：2026年11月4日，08:00，示例_水煮鸡蛋（全蛋），数量2。按食物库的“个”计算，不覆盖E:AD的公式。完成后告诉我实际写入的单元格、单位、热量和蛋白质。</p></blockquote>
 <p>没有直接写入能力时，手动在“每日摄入”填入：</p>
-<table>
-<thead>
-<tr>
-<th>A 日期</th>
-<th>B 时间</th>
-<th>C 食物/补剂名称</th>
-<th>D 摄入数量</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>2026-11-04</td>
-<td>08:00</td>
-<td>水煮鸡蛋（全蛋）</td>
-<td>2</td>
-</tr>
-</tbody></table>
-<p>在“营养看板”B4填写相同日期。按模板示例，这条记录应得到156 kcal、蛋白质12.6 g、碳水1.12 g、脂肪10.6 g。它们是通用估算，不是对你那两枚鸡蛋的测量结果。微量营养缺失时保持空白。</p>
+<table><thead><tr><th>A 日期</th><th>B 时间</th><th>C 食物/补剂名称</th><th>D 摄入数量</th></tr></thead><tbody><tr><td>2026-11-04</td><td>08:00</td><td>示例_水煮鸡蛋（全蛋）</td><td>2</td></tr></tbody></table>
+<p>先在“每日能量收支”A4新增同日日期，消耗和全天确认暂不填；再在“营养看板”B3选择相同日期。按模板示例，这条记录应得到156 kcal、蛋白质12.6 g、碳水1.12 g、脂肪10.6 g。它们是通用估算，不是对你那两枚鸡蛋的测量结果。食物库中未知营养留空；摄入明细显示“未知”，看板显示已知小计与缺失状态。</p>
 <p>核对记录没有重复，公式和下拉选项仍在。正式使用时另存一份空白副本；不要把测试记录混入真实日志。</p>
 <h2>5. 记录全天消耗</h2>
 <p>“运动日志”每场训练单独一行。“每日能量收支”同一天只保留一行，填写：</p>
-<table>
-<thead>
-<tr>
-<th>列</th>
-<th>填什么</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>A</td>
-<td>实际日期</td>
-</tr>
-<tr>
-<td>B</td>
-<td>WHOOP或其他设备的<strong>全天</strong>总消耗，单位kcal</td>
-</tr>
-<tr>
-<td>K</td>
-<td>当天饮食确已全部记录时选“是”；否则留空或选“否”</td>
-</tr>
-</tbody></table>
+<table><thead><tr><th>列</th><th>填什么</th></tr></thead><tbody><tr><td>A</td><td>实际日期</td></tr><tr><td>B</td><td>WHOOP或其他设备的<strong>全天</strong>总消耗，单位kcal</td></tr><tr><td>K</td><td>当天饮食确已全部记录时选“是”；否则留空或选“否”</td></tr></tbody></table>
 <p>只有数据齐全、食物匹配正常、日期没有重复且K列为“是”，该天才参与能量趋势。能量差值 = 摄入 − 全天总消耗，训练热量不会再扣一次。不要为看到一个结果而把只记了早餐的日子标为完整。</p>
 <p>首次数学测试可临时把全天消耗填2100、K列选“是”，仅两枚鸡蛋时差值应为−1944 kcal；这是计算测试，不能当作真实全天缺口，测试后删除临时输入。</p>
 <h2>6. 添加食物与配方</h2>
 <p>新增食物时，先核对品牌、计量单位、生熟状态、基准数量、来源和估算级别，再写入“食物补剂库”。“未知”留空，不能填零凑数。不要把150g牛肉填成150g蛋白质。</p>
-<blockquote>
-<p>新增一种食物前，先检查是否重名，展示来源、每份数量、单位和营养值。无法核实的内容明确标出，等我确认再写入。</p>
-</blockquote>
-<p>配方先写入“我的固定配方”的ID、版本和份数，再在“配方原料”填写同一ID、版本、原料名称和用量。核对汇总后，将<strong>每份营养的快照</strong>作为新条目加入食物库，随后在每日摄入中记一次成品，不再重复计入原料。</p>
-<blockquote>
-<p>保存为“抹茶饮V1”。先检查原料数据，核对总量和每份量。需要修改时新增V2，不覆盖V1或历史记录。</p>
-</blockquote>
-<p>模板中的查找公式会读取食物库当前值。要保持历史稳定，已使用的食物与配方营养值不要原地修改，应新增版本名称；尚不提供自动冻结历史、自动发布配方或自动添加食物的按钮，这些由AI工作流程或人工核对完成。</p>
+<blockquote><p>新增一种食物前，先检查是否重名，展示来源、每份数量、单位和营养值。无法核实的内容明确标出，等我确认再写入。</p></blockquote>
+<p>配方先写入“我的固定配方”的ID、版本和份数，再在“配方原料”填写同一ID、版本、原料名称和用量。核对汇总后，将目录中该版本的 <strong>A:AB复制为数值到“配方快照”相同列，AD:AW列也复制为数值到AD:AW列</strong>；不要复制AC选择列表。快照营养值是整个配方批次的已知小计，C列保存该批次份数；AD:AW同时保存缺失状态，未知不能靠填零补齐。</p>
+<p>在每日摄入C列直接选择已发布配方ID，D列填写吃了几份；不需要再把配方抄进食物库，也不要重复记录原料。示例“示例_双鸡蛋_v1”每份应为156 kcal、蛋白质12.6g。</p>
+<blockquote><p>保存为“抹茶饮_v1”。先核对原料、总量和批次份数；将结果仅粘贴为数值发布，再按份记录。更改原料或份数时新增v2，保留v1。</p></blockquote>
+<p><strong>设置个人参考值：</strong> 在个人参数填写年龄、身高、体重、生理性别、生命阶段和吸烟状态。红色虚构示例不参与计算。微量营养按NIH/NASEM成人规则匹配；不支持的年龄或阶段组合不自动给目标。训练系数是原表保留的个人预设，需确认采用，且明确当日训练类型。没有运动记录时，在每日能量收支L列明确确认休息日，空白不等于休息。</p>
+<p><strong>保护历史：</strong> 已发布配方保留静态数值，禁止覆盖旧ID。每天完成核对后，将营养看板 <strong>J10:AC27的18行×20列仅粘贴为数值</strong>到每日归档A:T；首次从A4开始，后续在DailyArchive表格中追加18行并延续U列核验公式。每个日期18项各一行。归档保存当时的摄入、缺失值状态、个人参数、目标和规则版本；修改当前个人参数或食物库不重算已归档日期。</p>
+<p>粘贴公式不会变成静态历史；U列只核验字段，不能代替“仅粘贴值”操作。尚未归档的日期继续读取当前食物库。表格不提供自动AI连接或自动归档按钮。</p>
 <h2>7. 每次保存后核对</h2>
 <ul>
 <li>新增行数、日期、食物名称、数量和单位是否正确。</li>
-<li>E:Y公式、下拉列表及看板是否保留并刷新。</li>
+<li>E:AD公式、下拉列表及看板是否保留并刷新。</li>
 <li>是否有“未匹配或重名”“数量无效”或“营养数据缺失”。</li>
 <li>是否重复记录饮品原料，或重复扣减训练热量。</li>
 <li>AI若只输出表格，是否明确写着“待导入”。</li>
 </ul>
-<p>预置容量为100条饮食、200种食物、30条配方原料、10个配方、100条运动和62个能量日期。超出时必须同时扩展表格、公式、下拉列表和汇总引用范围，不能只在末尾输入一行。</p>
-<p>当前已在生成环境中测试食物换算、下一行记录、缺失食物、配方汇总、完整日判定和训练不重复扣减；尚未在Microsoft Excel、豆包工作或Harness客户端完成实测。遇到不一致请先停用该副本，保留备份并反馈错误位置。</p>
+<p>预置容量：999条摄入、199种食物、100行配方原料、200个配方版本、199条运动和431个能量日期。每日归档使用可扩展Excel表格，每天追加18行并延续核验公式。其他区域超出容量时，必须同步扩展表格、公式、下拉列表和汇总范围。</p>
+<p>本版在生成环境检查配方按份调用、年龄/性别/生命阶段匹配、缺失值、完整日门槛、历史归档与超过旧104行的趋势汇总；尚未在Microsoft Excel、豆包工作或Harness客户端完成实测。遇到不一致请先停用该副本，保留备份并反馈错误位置。</p>
 <h2>8. 隐私、授权与反馈</h2>
 <p>自己的真实记录保存在私人文件中，不要上传到公开仓库。设备消耗和营养均可能存在误差；本工具用于记录与趋势观察，不用于诊断或治疗。</p>
 <p>Copyright © 2026 AlphaBodyCode。指南与Skill采用<a href="../LICENSE-DOCS.md">CC BY-NC 4.0</a>；工作簿公式和网站实现采用<a href="../LICENSE">PolyForm Noncommercial 1.0.0</a>。非商业分享请保留署名与来源，商业授权联系项目维护者。</p>
-<p><a href="https://github.com/alphabodycode/alphabodycode.github.io">GitHub 项目与反馈</a> · <a href="GETTING-STARTED.en.html">English</a></p>
-<footer><a href="GETTING-STARTED.zh-CN.md" download>下载这份指南（Markdown）</a> · © 2026 AlphaBodyCode</footer></main><script>document.querySelectorAll('blockquote').forEach(q=>{const b=document.createElement('button');b.className='copy';b.textContent="复制指令";b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(q.querySelector('p').innerText);b.textContent="已复制";}catch{b.textContent="请选中文字复制";}});q.append(b);});</script></body></html>
+<p><a href="https://github.com/alphabodycode/alphabodycode.github.io">GitHub 项目与反馈</a> · <a href="GETTING-STARTED.en.html">English</a></p></main><script>document.querySelectorAll('blockquote').forEach(q=>{const b=document.createElement('button');b.className='copy';b.textContent="复制指令";b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(q.querySelector('p').innerText);b.textContent="已复制";}catch{b.textContent="请选中文字复制";}});q.append(b);});</script></body></html>
