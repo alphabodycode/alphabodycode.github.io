@@ -1,6 +1,6 @@
 # Getting started
 
-AlphaBodyCode Nutrition Logger · Public Beta v0.2.0 · Updated November 4, 2026
+AlphaBodyCode Nutrition Logger · Public Beta v0.3.0 · Updated November 5, 2026
 
 [Home](../index.html#get-started) · [简体中文](GETTING-STARTED.zh-CN.html) · [Download blank Excel template](../templates/download.html)
 
@@ -9,7 +9,7 @@ Start with one entry. Add foods and recipes as you need them. No coding required
 ## 1. Download and prepare
 
 1. Download the blank template above and save your own copy.
-2. Save or copy the [English workflow rules](../skills/alphabodycode-nutrition-logger/SKILL.md).
+2. Save or copy the [English workflow rules](https://github.com/alphabodycode/alphabodycode.github.io/blob/main/skills/alphabodycode-nutrition-logger/SKILL.md).
 3. Choose an AI tool. Direct Excel editing requires spreadsheet or file-editing tools; the rules alone do not grant file access.
 
 This public starter follows the existing workbook structure, without personal measurements, intake, workouts, device expenditure or private recipes. It includes one clearly labelled generic boiled-egg example for your first test. It is not a complete nutrition database.
@@ -65,7 +65,7 @@ The workbook uses Chinese field names:
 
 Use a test copy. Replace the date with your actual date:
 
-> This is a test. Append one row in 每日摄入, columns A:D: November 4, 2026; 08:00; 示例_水煮鸡蛋（全蛋）; quantity 2. Use the food-library unit 个 (eggs). Preserve formulas in E:AD. Report the cells actually written, units, calories and protein.
+> This is a test. Append one row in 每日摄入, columns A:D: November 5, 2026; 08:00; 示例_水煮鸡蛋（全蛋）; quantity 2. Use the food-library unit 个 (eggs). Preserve formulas in E:AD. Report the cells actually written, units, calories and protein.
 
 Without file-editing tools, enter:
 
@@ -101,7 +101,7 @@ For a recipe, enter ID, version and batch servings in 我的固定配方; add it
 
 In 每日摄入, select the published recipe ID directly in C and enter consumed servings in D. Do not republish it as a food or also log its ingredients. The generic 示例_双鸡蛋_v1 recipe gives 156 kcal and 12.6g protein per serving. Create a new version for ingredient or serving changes; preserve the previous published ID.
 
-**Personal references:** Enter actual age, height, weight, physiological sex, life stage and smoking status in 个人参数. Red fictional examples do not feed calculations. Adult micronutrient rules use NIH/NASEM references; unsupported age/stage combinations have no automatic target. Training coefficients are retained personal presets, requiring explicit adoption and a confirmed daily training type. With no workout log, confirm the day type in 每日能量收支!L; missing logs do not imply a rest day.
+**Personal references:** Enter age, physiological sex and life stage to match Chinese CNS DRIs2023 core references. Height/weight are separate inputs for metabolism and training. Women aged 50–64 must state menstrual status for iron RNI; do not infer it from age. Select low/middle/high PAL, then explicitly adopt the population EER or enter a confirmed positive energy target before macro gram ranges appear. Protein RNI, AMDR and UL remain distinct. Training goals are shown separately below the dashboard. Coverage is adults18+, pregnancy by trimester/lactation18–49; children are not yet supported. Existing archives retain their original standards and targets.
 
 **Preserve history:** After checking a day, copy **营养看板!J10:AC27, 18 rows by 20 columns, as values only** into 每日归档!A:T. Start at A4; for later days add 18 rows within the DailyArchive Excel table and extend its U validation formulas. Each date needs exactly one row for each of the 18 nutrients. Archived totals, missing-data status, personal parameters, targets and rule version remain static when current food/profile data change.
 
