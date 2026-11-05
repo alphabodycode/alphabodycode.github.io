@@ -1,7 +1,6 @@
 ---
 name: alphabodycode-nutrition-logger
-description: Record food, supplements, workouts and wearable-estimated energy expenditure in a user-authorized nutrition workbook using natural language. Use when the user wants to log meals, look up new food nutrition, assemble a one-off recipe, create a versioned recurring recipe, or review daily energy and nutrient intake. Preserve history, label estimates, verify workbook capabilities and never invent nutrition facts.
-license: CC-BY-NC-4.0
+description: Record meals, supplements, recipes and workouts in an authorized AlphaBodyCode nutrition workbook. Use when logging intake, setting age/sex/life-stage references from Chinese DRIs 2023, checking nutrient completeness, publishing versioned recipes or archiving complete days. Preserve formulas, provenance and frozen history.
 ---
 ---
 
@@ -36,13 +35,17 @@ Project Website:
 https://alphabodycode.github.io/
 
 ---
-# AlphaBodyCode Nutrition Logger — Public Beta v0.1.0
+# AlphaBodyCode Nutrition Logger — Public Beta v0.3.0
 
 ## Scope and prerequisites
 
 Operate on a workbook the user owns and has explicitly opened or authorized. This skill contains **instructions only**; it does not itself connect to Excel, retrieve WHOOP data, provide a nutrition database API, or execute spreadsheet writes. Before claiming that a record was saved, use an available spreadsheet-editing tool and verify the changed cells. If no editing capability is available, return a structured, ready-to-import draft rather than claiming success.
 
 Never assume the user's workbook matches one specific private AlphaBodyCode file. Inspect sheet names, field mappings, units, validation rules, formulas, tables and naming conventions first. Obtain consent before structural changes, and work on a backed-up copy.
+
+## Chinese reference targets and workbook version
+
+Before setting targets or writing v0.3.0 fields, read [the workbook contract](references/workbook-v030.md). Use [verified CNS2023 data](references/cns2023.json) and the workbook rule library, including official source URLs. Match age, sex and life stage; distinguish RNI/AI, AMDR and UL. Require confirmed energy before calculating macro grams, preserve unsupported/unknown values, and keep training goals separate from the baseline. Never infer a complete day from a partial meal log.
 
 ## Workflow
 
