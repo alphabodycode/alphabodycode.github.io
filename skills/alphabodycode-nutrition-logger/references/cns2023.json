@@ -1,0 +1,571 @@
+{
+  "version": "CNS-DRIs-2023/ABC-0.3.0",
+  "verified": "2026-11-05",
+  "scope": "18岁及以上；孕期及哺乳期18–49岁；仅接入当前看板有字段的核心营养素",
+  "groups": [
+    {
+      "table": 9,
+      "sex": "男",
+      "age_min": 18,
+      "age_max": 29,
+      "stage": "一般成人",
+      "eer_mj": [
+        9,
+        10.67,
+        12.55
+      ],
+      "protein_rni_g": 65,
+      "magnesium_rni_mg": 330,
+      "iron_rni_mg": 12,
+      "vitamin_d_rni_ug": 10,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.1,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@6f91a3f6-ece6-4777-865d-5cb3ff30095a.jpg",
+      "title": "表9  中国18-29岁成年男性膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 10,
+      "sex": "女",
+      "age_min": 18,
+      "age_max": 29,
+      "stage": "一般成人",
+      "eer_mj": [
+        7.11,
+        8.79,
+        10.25
+      ],
+      "protein_rni_g": 55,
+      "magnesium_rni_mg": 330,
+      "iron_rni_mg": 18,
+      "vitamin_d_rni_ug": 10,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.1,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@0dde980a-f7cb-4407-b784-e1fb17d757ab.jpg",
+      "title": "表10  中国18-29岁成年女性膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 11,
+      "sex": "男",
+      "age_min": 30,
+      "age_max": 49,
+      "stage": "一般成人",
+      "eer_mj": [
+        8.58,
+        10.46,
+        12.34
+      ],
+      "protein_rni_g": 65,
+      "magnesium_rni_mg": 320,
+      "iron_rni_mg": 12,
+      "vitamin_d_rni_ug": 10,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.1,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@d82d5763-e449-4419-9ba7-29d47684485a.jpg",
+      "title": "表11  中国30-49岁成年男性膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 12,
+      "sex": "女",
+      "age_min": 30,
+      "age_max": 49,
+      "stage": "一般成人",
+      "eer_mj": [
+        7.11,
+        8.58,
+        10.04
+      ],
+      "protein_rni_g": 55,
+      "magnesium_rni_mg": 320,
+      "iron_rni_mg": 18,
+      "vitamin_d_rni_ug": 10,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.1,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@d8670add-1ae0-4f81-9de4-43ad7ec07d8b.jpg",
+      "title": "表12  中国30-49岁成年女性膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 13,
+      "sex": "男",
+      "age_min": 50,
+      "age_max": 64,
+      "stage": "一般成人",
+      "eer_mj": [
+        8.16,
+        10.04,
+        11.72
+      ],
+      "protein_rni_g": 65,
+      "magnesium_rni_mg": 320,
+      "iron_rni_mg": 12,
+      "vitamin_d_rni_ug": 10,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.1,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@e59cdffa-a0e4-4c31-9fec-ffed593d19e9.jpg",
+      "title": "表13  中国50-64岁成年男性膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 14,
+      "sex": "女",
+      "age_min": 50,
+      "age_max": 64,
+      "stage": "一般成人",
+      "eer_mj": [
+        6.69,
+        8.16,
+        9.62
+      ],
+      "protein_rni_g": 55,
+      "magnesium_rni_mg": 320,
+      "iron_rni_mg": null,
+      "vitamin_d_rni_ug": 10,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.1,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@5174270c-8a5d-4894-b8c6-8391b8676c1f.jpg",
+      "title": "表14  中国50-64岁成年女性膳食营养素参考摄入量（2023版）",
+      "iron_rni_by_menses_mg": {
+        "有月经": 18,
+        "无月经": 10
+      }
+    },
+    {
+      "table": 15,
+      "sex": "女",
+      "age_min": 18,
+      "age_max": 49,
+      "stage": "孕早期",
+      "eer_mj": [
+        7.11,
+        8.79,
+        10.25
+      ],
+      "protein_rni_g": 55,
+      "magnesium_rni_mg": 370,
+      "iron_rni_mg": 18,
+      "vitamin_d_rni_ug": 10,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.1,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@5b5e44ab-5926-4284-b84d-b2cfe82749fd.jpg",
+      "title": "表15  中国18-49岁孕期女性（孕早期）膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 16,
+      "sex": "女",
+      "age_min": 18,
+      "age_max": 49,
+      "stage": "孕中期",
+      "eer_mj": [
+        8.16,
+        9.84,
+        11.3
+      ],
+      "protein_rni_g": 70,
+      "magnesium_rni_mg": 370,
+      "iron_rni_mg": 25,
+      "vitamin_d_rni_ug": 10,
+      "vitamin_c_rni_mg": 115,
+      "fiber_ai_g": [
+        29,
+        34
+      ],
+      "protein_amdr": [
+        0.1,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@462feea6-dd9e-4a05-a639-0532a363da21.jpg",
+      "title": "表16  中国18-49岁孕期女性（孕中期）膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 17,
+      "sex": "女",
+      "age_min": 18,
+      "age_max": 49,
+      "stage": "孕晚期",
+      "eer_mj": [
+        8.78,
+        10.46,
+        11.92
+      ],
+      "protein_rni_g": 85,
+      "magnesium_rni_mg": 370,
+      "iron_rni_mg": 29,
+      "vitamin_d_rni_ug": 10,
+      "vitamin_c_rni_mg": 115,
+      "fiber_ai_g": [
+        29,
+        34
+      ],
+      "protein_amdr": [
+        0.1,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@4e635170-36c1-4427-bf24-7474690df0b0.jpg",
+      "title": "表17  中国18-49岁孕期女性（孕晚期）膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 18,
+      "sex": "女",
+      "age_min": 18,
+      "age_max": 49,
+      "stage": "哺乳期",
+      "eer_mj": [
+        8.78,
+        10.46,
+        11.92
+      ],
+      "protein_rni_g": 80,
+      "magnesium_rni_mg": 330,
+      "iron_rni_mg": 24,
+      "vitamin_d_rni_ug": 10,
+      "vitamin_c_rni_mg": 150,
+      "fiber_ai_g": [
+        29,
+        34
+      ],
+      "protein_amdr": [
+        0.1,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@09d34e7c-49aa-4243-8ac1-437b5e277a88.jpg",
+      "title": "表18  中国18-49岁哺乳期女性膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 20,
+      "sex": "男",
+      "age_min": 65,
+      "age_max": 74,
+      "stage": "一般成人",
+      "eer_mj": [
+        7.95,
+        9.62,
+        null
+      ],
+      "protein_rni_g": 72,
+      "magnesium_rni_mg": 310,
+      "iron_rni_mg": 12,
+      "vitamin_d_rni_ug": 15,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.15,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@d7865f3d-928f-4330-b239-fc5990bb075c.jpg",
+      "title": "表20  中国65-74岁老年男性膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 21,
+      "sex": "女",
+      "age_min": 65,
+      "age_max": 74,
+      "stage": "一般成人",
+      "eer_mj": [
+        6.49,
+        7.74,
+        null
+      ],
+      "protein_rni_g": 62,
+      "magnesium_rni_mg": 310,
+      "iron_rni_mg": 10,
+      "vitamin_d_rni_ug": 15,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.15,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@bf26ee4e-b027-4619-aebb-12ea8d72b39e.jpg",
+      "title": "表21  中国65-74岁老年女性膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 22,
+      "sex": "男",
+      "age_min": 75,
+      "age_max": 120,
+      "stage": "一般成人",
+      "eer_mj": [
+        7.53,
+        9.2,
+        null
+      ],
+      "protein_rni_g": 72,
+      "magnesium_rni_mg": 300,
+      "iron_rni_mg": 12,
+      "vitamin_d_rni_ug": 15,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.15,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@b08ba167-2e52-46d7-997c-72f69a95dc2a.jpg",
+      "title": "表22  中国75岁以上老年男性膳食营养素参考摄入量（2023版）"
+    },
+    {
+      "table": 23,
+      "sex": "女",
+      "age_min": 75,
+      "age_max": 120,
+      "stage": "一般成人",
+      "eer_mj": [
+        6.28,
+        7.32,
+        null
+      ],
+      "protein_rni_g": 62,
+      "magnesium_rni_mg": 300,
+      "iron_rni_mg": 10,
+      "vitamin_d_rni_ug": 15,
+      "vitamin_c_rni_mg": 100,
+      "fiber_ai_g": [
+        25,
+        30
+      ],
+      "protein_amdr": [
+        0.15,
+        0.2
+      ],
+      "carb_amdr": [
+        0.5,
+        0.65
+      ],
+      "fat_amdr": [
+        0.2,
+        0.3
+      ],
+      "calcium_rni_mg": 800,
+      "calcium_ul_mg": 2000,
+      "iron_ul_mg": 42,
+      "vitamin_d_ul_ug": 50,
+      "vitamin_c_ul_mg": 2000,
+      "source": "https://www.cnsoc.org/www/@10a68e3b-961d-4f2c-b57b-e5f23ab7bd4f.jpg",
+      "title": "表23  中国75岁以上老年女性膳食营养素参考摄入量（2023版）"
+    }
+  ]
+}
